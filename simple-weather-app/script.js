@@ -1,4 +1,3 @@
-// 7162720620d3ecb9eb1b874978a1abfd
 
 const date = document.getElementById('date');
 const city = document.getElementById('city');
@@ -26,7 +25,7 @@ const getWeather = async () => {
     try {
         // Get User Input
         const cityName = document.getElementById('search-bar-input').value;
-        const weatherDataFetch = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName || "Cape Town"}&appid=7162720620d3ecb9eb1b874978a1abfd&units=metric`, {
+        const weatherDataFetch = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName || "Cape Town"}&appid=[insert API key]&units=metric`, {
             headers: {
                 Accept: 'application/json'
             }
