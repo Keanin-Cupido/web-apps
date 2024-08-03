@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Weather App</title>
+</head>
+<body>
+    <h1 id="logo">Simple Weather</h1>
+    <!-- Weather API -->
+    <div class="app">
+        <!-- Search Bar -->
+        <div id="search-bar">
+            <input autocomplete="false" id="search-bar-input" type="text" placeholder="Search by City">
+            <button id="search-icon" onclick={getWeather()}><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+
+       <!-- Date and City -->
+        <div id="info">
+            <p id="date">01-01-2024</p>
+            <h4 id="city">Cape Town</h4>
+        </div>
+
+        <!-- Icon  -->
+        <div id="temp-img"></div>
+
+        <!-- Description of weather -->
+        <p id="description">Rain</p>
+
+        <!-- Temperture -->
+        <div id="temp">13 C</div>
+
+        <!-- Info at the bottom -->
+        <div class="extra-info">
+            <div class="col">
+                <div class="info">
+                    <h5>Highs</h5>
+                    <p id="temp-max">24 C</p>
+                </div>
+            </div>            
+            <div class="col">
+                <div class="info">
+                    <h5>Lows</h5>
+                    <p id="temp-min">5 C</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p id="footer">&#169 2024 Simple Weather. All rights reserved</p>
+</body>
+<script src="script.js"></script>
+</html>
