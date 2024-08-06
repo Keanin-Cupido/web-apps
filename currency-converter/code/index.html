@@ -5,9 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <!-- Header -->
+     <header class="header">
+        <nav class="navbar">
+            <button class="btn btn--primary">Get the App</button>
+        </nav>
+        <div class="hero">
+            <h2 class="hero--title">Always get the real exchange rate</h2>
+            <p class="hero--subtitle">Banks markup the exchange rate when you spend or transfer money abroad. We don't.</p>
+        </div>
+     </header>
+
+    <!-- Main -->
+    <main class="main">
+        <div class="dropmenus">
+            <div class="dropmenus--from">
+                <label for="drop--from">From</label>
+                <select name="drop--from" id="drop--from">
+                    <option value="GBP">
+                        GBP - British Pound
+                        <img src="" alt="GB"/>
+                    </option>
+                    <option value="ZAR">
+                        ZAR - South African Rand
+                        <img src="" alt="ZA"/>
+                    </option>
+                </select>
+            </div>
+            <div class="dropmenus--to">
+                <label for="drop--to">To</label>
+                <select name="drop--to" id="drop--to">
+                    <option value="GBP">USD - US Dollar</option>
+                </select>
+            </div>
+        </div>
+        <div class="conversions">
+            <div class="conversion--left">
+                <input type="text" name="" id="" value="14.78">
+            </div>
+            <div class="conversion--right">
+                <input type="text" name="" id="" value="18.93">
+            </div>
+        </div>
+        <div class="extra_info">
+            <div class="extra_info--left">
+                <div class="current_rate">
+                    <p>Current rate</p>
+                    <p>1.287</p>
+                </div>
+                <div class="todays_change">
+                    <p>Today's change</p>
+                    <p>0.0016 (0.12%)</p>
+                </div>
+            </div>
+            <div class="line_graph">
+                <p>--------____----__-----______</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
     <script src="./scripts/script.js"></script>
 </body>
 </html>

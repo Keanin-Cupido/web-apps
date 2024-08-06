@@ -1,0 +1,154 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1rem;
+    font-family: "Poppins", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    padding: 2em;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Buttons */
+button.btn {
+    border-radius: 25px;
+    padding: 0.8em 1.7em;
+    font-family: inherit;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+button.btn--primary {
+    color: white;
+    border: none;
+    background-color: hsl(333, 82%, 53%);
+    transition: all 0.2s ease;
+}
+button.btn--primary:hover {
+    background-color: hsl(333, 82%, 42.5%);
+}
+
+/* Header */
+header.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+header nav.navbar {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+header .hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.9em;
+}
+header .hero .hero--title {
+    font-size: 2rem;
+    font-weight: 300;
+}
+header .hero .hero--subtitle {
+    font-size: 0.78rem;
+    color: rgb(183, 183, 183);
+    font-weight: 400;   
+}
+
+/* Main */
+main {
+    width: 100%;
+    max-width: 70vw;
+    margin: 5em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main .dropmenus {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+}
+main .dropmenus .dropmenus--from,
+main .dropmenus .dropmenus--to {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+main .dropmenus .dropmenus--from label,
+main .dropmenus .dropmenus--to label {
+    font-size: 0.75rem;
+    font-family: inherit;
+    color: hsl(0, 0%, 70%);
+}
+
+main .dropmenus #drop--from,
+main .dropmenus #drop--to {
+    cursor: pointer;
+    width: 100%;
+    padding: 1em 1em 1em 0em;
+    border: none;
+    border-bottom: 3px solid hsl(0, 0%, 90%);
+    font-family: inherit;
+    font-weight: 500;
+    outline: none;
+    display: block;
+}
+
+/* Conversions */
+.conversions {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2em;
+}
+.conversions .conversion--left > input,
+.conversions .conversion--right > input {
+    width: 100%;
+    font-family: inherit;
+    font-weight: 200;
+    font-size: 4.5rem;
+    border: none;
+    outline: none;
+    margin: 0.5em 0em;
+}
+
+/* Extra Info */
+main .extra_info {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2em;
+}
+main .extra_info .extra_info--left {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2em;
+}
+main .extra_info .line_graph {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: rebeccapurple;
+}
