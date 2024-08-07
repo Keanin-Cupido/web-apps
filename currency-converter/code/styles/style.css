@@ -145,6 +145,22 @@ main .extra_info .extra_info--left {
     justify-content: flex-start;
     gap: 2em;
 }
+main .extra_info .extra_info--left .title {
+    font-size: 0.75rem;
+    font-family: inherit;
+    color: hsl(0, 0%, 70%);
+}
+main .extra_info .extra_info--left .value {
+    font-size: 1.25rem;
+    font-family: inherit;
+    font-weight: 500;
+}
+main .extra_info .extra_info--left .value--todays_change {
+    font-size: 1.25rem;
+    font-family: inherit;
+    font-weight: 500;
+    color: hsl(0, 60%, 50%);
+}
 main .extra_info .line_graph {
     width: 100%;
     display: flex;
