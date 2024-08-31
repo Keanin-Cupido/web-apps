@@ -35,5 +35,3 @@ The Bin2Dec app will follow a simple client-side architecture, as the conversion
     -   Static file hosting (e.g., GitHub Pages, Netlify) as there's no server-side processing required.
 
 This architecture keeps the app simple, fast, and easily maintainable, as all logic is contained within the frontend without the need for a backend or database.
-
-## Prototyping

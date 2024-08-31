@@ -1,0 +1,103 @@
+:root {
+	--default-black: #1f1f1f;
+	--default-white: #ececec;
+}
+
+body {
+	font-family: 'SUSE', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: normal;
+	font-style: normal;
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+	background-color: var(--default-black);
+	color: var(--default-white);
+}
+
+/* Navbar */
+nav.navbar {
+	width: 100%;
+
+	.container-fluid {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 1000px;
+		margin: 0 auto;
+
+		.navbar-brand {
+			font-weight: bold;
+			letter-spacing: -1px;
+		}
+
+		.navbar-nav {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			text-align: right;
+		}
+	}
+}
+
+/* App Container */
+.app_container {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 2em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2em;
+
+	.logo {
+		font-size: 2rem;
+		font-weight: bold;
+		letter-spacing: 1px;
+		text-align: center;
+	}
+
+	.input_container {
+		width: 100%;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	.output_container {
+		width: 100%;
+		max-width: 600px;
+		min-height: 200px;
+		max-height: 300px;
+		border-radius: 15px;
+		margin: 0 auto;
+		padding: 2em;
+		background-color: hsl(0, 0%, 15%);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		.output_message {
+			font-size: 4rem;
+			font-weight: bold;
+			color: #3c6efd;
+		}
+	}
+}
+
+.errors_container {
+	position: absolute;
+	bottom: 2em;
+	right: 2em;
+
+	.alert {
+		font-size: 1rem;
+		box-shadow: 1px 5px 15px #1c1c1c0d;
+	}
+}
