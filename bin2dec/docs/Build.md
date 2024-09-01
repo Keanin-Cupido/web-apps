@@ -8,6 +8,7 @@ The Bin2Dec app will follow a simple client-side architecture, as the conversion
 
     -   HTML: Provides the structure of the single-page application.
     -   CSS: Handles the styling and layout of the app.
+    -   Bootstrap: Powerful, extensible, and feature-packed frontend toolkit.
     -   JavaScript: Implements the binary to decimal conversion logic and user interactions.
 
 -   Components:

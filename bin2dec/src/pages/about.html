@@ -3,11 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			rel="shortcut icon"
-			href="./public/bin2dec.ico"
-			type="image/x-icon" />
-		<title>Bin2Dec..</title>
+		<title>About</title>
 		<!-- Bootstrap -->
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -19,7 +15,7 @@
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 			crossorigin="anonymous"></script>
 		<!-- CSS -->
-		<link rel="stylesheet" href="./src/assets/styles/global.css" />
+		<link rel="stylesheet" href="../assets/styles/global.css" />
 		<!-- Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,7 +23,7 @@
 			href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap"
 			rel="stylesheet" />
 	</head>
-	<body class="home_page">
+	<body class="about_page">
 		<nav
 			class="navbar navbar-expand-lg navbar-dark border-bottom border-body"
 			data-bs-theme="dark">
@@ -49,7 +45,7 @@
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item">
 							<a
-								class="nav-link active"
+								class="nav-link"
 								aria-current="page"
 								href="/index.html"
 								>Home</a
@@ -66,7 +62,7 @@
 						</li>
 						<li class="nav-item">
 							<a
-								class="nav-link"
+								class="nav-link active"
 								aria-current="page"
 								href="./src/pages/about.html"
 								>About</a
@@ -77,34 +73,37 @@
 			</div>
 		</nav>
 		<main class="app_container">
-			<!-- Header/Logo -->
-			<div class="logo">
-				<p>Binary to Decimal Converter</p>
-			</div>
-
-			<!-- Input -->
-			<div class="input_container">
-				<div class="mb-3">
-					<label for="binaryInput" class="form-label">Binary</label>
-					<input
-						type="number"
-						class="form-control"
-						id="binaryInput" />
-				</div>
-				<button type="submit" class="btn btn-primary" id="convertBtn">
-					Convert
-				</button>
-			</div>
-
-			<!-- Output -->
-			<div class="output_container">
-				<label for="binaryInput" class="form-label">Decimal</label>
-				<p class="output_message" id="outputMessage">45</p>
+			<div class="about_container">
+				<h1>About Bin2Dec</h1>
+				<p>
+					Bin2Dec is a simple yet powerful web application that allows
+					users to convert binary numbers to decimal numbers. This
+					tool is perfect for students, educators, and anyone who
+					needs to perform binary to decimal conversions quickly and
+					accurately.
+				</p>
+				<p>
+					Our mission is to provide an easy-to-use and accessible tool
+					for binary to decimal conversion, helping users understand
+					and work with binary numbers more effectively.
+				</p>
+				<p>Features:</p>
+				<ul>
+					<li>Instant binary to decimal conversion</li>
+					<li>User-friendly interface</li>
+					<li>Error handling for invalid binary inputs</li>
+					<li>Responsive design for use on any device</li>
+				</ul>
+				<p>
+					We hope you find Bin2Dec useful and easy to use. If you have
+					any feedback or suggestions, please feel free to reach out
+					to us on our
+					<a
+						href="https://github.com/Keanin-Cupido/web-apps/tree/main/bin2dec"
+						>GitHub page</a
+					>.
+				</p>
 			</div>
 		</main>
-		<!-- Error Messages -->
-		<div class="errors_container"></div>
 	</body>
-
-	<script src="./main.js"></script>
 </html>
